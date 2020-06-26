@@ -278,23 +278,4 @@ class Point:
         phi = math.atan2(self.y, self.x)
         theta = math.acos(self.z / r)
         return r, math.degrees(theta), math.degrees(phi)
-
-    # def from_polar(self, r, theta, phi, override=True):
-    #     self.logger.info("Converting from polar to cartesian")
-    #     if isinstance(r, (int, float)) or isinstance(theta, (int, float)) or isinstance(phi, (int, float)):
-    #         theta = math.radians(theta)
-    #         phi = math.radians(phi)
-    #
-    #         x = r * math.sin(theta) * math.cos(phi)
-    #         y = r * math.sin(theta) * math.sin(phi)
-    #         z = r * math.cos(theta)
-    #
-    #         if override:
-    #             self.x = x
-    #             self.y = y
-    #             self.z = z
-    #         else:
-    #             return Point(self.logger, x=x, y=y, z=z)
-    #     else:
-    #         self.logger.error("Unsupported type")
-    #         raise ValueError("Unsupported type")
+    
